@@ -11,6 +11,7 @@ Nesta atividade, você fazer exercícios de programação para vai praticar a ma
 ## Prints do console do navegador
 
 ![Listagem,Calculos,Verificações](img/screenshot.png) 
+<img width="639" height="564" alt="image" src="https://github.com/user-attachments/assets/1549bb64-704b-4269-b71c-28ca25eefb13" />
 
 
 ![Página com resumo](img/resumo-tela.png)
