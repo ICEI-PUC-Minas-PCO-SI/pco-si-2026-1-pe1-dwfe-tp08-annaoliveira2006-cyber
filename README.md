@@ -10,12 +10,5 @@ Nesta atividade, você fazer exercícios de programação para vai praticar a ma
 
 ## Prints do console do navegador
 
-<<  COLOQUE A IMAGEM - LISTAGEM DE TÍTULOS - AQUI >>
-<<  COLOQUE A IMAGEM - CÁLCULO DE MÉDIAS - AQUI >>
-<<  COLOQUE A IMAGEM - RESUMO DE VERIFICAÇÕES (SOME E EVERY) - AQUI >>
-
 ![Listagem,Calculos,Verificações](img/screenshot.png)
-
-<<  COLOQUE A IMAGEM - PÁGINA COM O RESUMO - AQUI >>
-
 ![Página com resumo](img/resumo-tela.png)
