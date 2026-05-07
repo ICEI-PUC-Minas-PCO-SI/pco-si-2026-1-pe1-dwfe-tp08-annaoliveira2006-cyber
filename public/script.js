@@ -4,7 +4,7 @@ const catalogo = [
     { id: 2, titulo: "Your Name", tipo: "filme", genero: ["Animação", "Romance"], ano: 2016, nota: 8.4, assistido: false },
     { id: 3, titulo: "A Origem", tipo: "filme", genero: ["Sci-Fi", "Ação"], ano: 2010, nota: 8.8, assistido: true },
     { id: 4, titulo: "Breaking Bad", tipo: "série", genero: ["Crime", "Drama"], ano: 2008, nota: 9.5, assistido: true },
-    { id: 5, titulo: "O Exterminador do Futuro 2", tipo: "filme", genero: ["Sci-Fi", "Ação"], ano: 1991, nota: 8.5, assistido: false }
+    { id: 5, titulo: "O Exterminador do Futuro 2", tipo: "filme", genero: ["Sci-Fi", "Ação"], ano: 1991, nota: 8.5, assistido: false },
     { id: 6, titulo: "Stranger Things", tipo: "série", genero: ["Sci-Fi", "Terror"], ano: 2016, nota: 8.7, assistido: true }
 ];
 
@@ -26,8 +26,8 @@ console.log("---Títulos em Maiúsculas (map) ---");
 const titulosEmCaixaAlta = catalogo.map(item => item.titulo.toUpperCase());
 console.log(titulosEmCaixaAlta);
 
-const naoAssistidos = catalogo.filter(item =>item.assistido === false);
-console.log(`Itens não assistidos: $ {naoAssistidos.length}`);
+const naoAssistidos = catalogo.filter(item => item.assistido === false);
+console.log(`Itens não assistidos: ${naoAssistidos.length}`);
 
 console.log("---Busca de Nota Alta (find) ---");
 const notaAlta = catalogo.find(item => item.nota > 8.7);
@@ -48,7 +48,7 @@ console.log(`Média Assistidos: ${mediaAssistidos.toFixed(2)}`);
 
 //Checagens (some e every)
 const existeAntigo = catalogo.some(item => item.ano < 2000);
-const todosTemGenero = catalogo.every(item => item.generos.length > 1);
+const todosTemGenero = catalogo.every(item => item.genero.length > 1);
 
 console.log(`Existe item lançado antes de 2000?, ${existeAntigo}`);
 console.log(`Todos os itens têm mais de um gênero?, ${todosTemGenero}`);
@@ -58,18 +58,16 @@ const output = document.getElementById("output");
 //Ranking: Criar cópia e ordenar por nota
 const ranking = [...catalogo].sort((a,b) => b.nota - a.nota).slice(0,3);
 
-output.innerHTML =
+output.innerHTML = `
     <ul>
         <li><strong>Total de itens:</strong> ${catalogo.length}</li>
         <li><strong>Filmes:</strong> ${catalogo.filter(i => i.tipo === 'filme').length}</li>
         <li><strong>Séries:</strong> ${catalogo.filter(i => i.tipo === 'série').length}</li>
         <li><strong>Não assistidos:</strong> ${naoAssistidos.length}</li>
         <li><strong>Média Geral:</strong> ${mediageral.toFixed(2)}</li>
-        <li><strong>Ranking (Top 3):</strong></li>
+    </ul>
     <h3>Top 3 Itens:</h3>
-    <ul>
     <ol>
         ${ranking.map(item => `<li>${item.titulo} - Nota: ${item.nota}</li>`).join('')}
-    </ol> 
-    </ul>
-`;
+    </ol>
+`; 
