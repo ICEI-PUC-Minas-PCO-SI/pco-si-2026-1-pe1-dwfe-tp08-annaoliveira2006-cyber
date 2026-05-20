@@ -5,15 +5,15 @@ Nesta atividade, você fazer exercícios de programação para vai praticar a ma
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
+- Nome: Anna Flávia de Oliveira Guimarães 
+- Matricula: 928027
 
 ## Prints do console do navegador
 
-<<  COLOQUE A IMAGEM - LISTAGEM DE TÍTULOS - AQUI >>
+![Listagem,Calculos,Verificações](img/screenshot.png) 
+<img width="639" height="564" alt="image" src="https://github.com/user-attachments/assets/1549bb64-704b-4269-b71c-28ca25eefb13" />
 
-<<  COLOQUE A IMAGEM - CÁLCULO DE MÉDIAS - AQUI >>
 
-<<  COLOQUE A IMAGEM - RESUMO DE VERIFICAÇÕES (SOME E EVERY) - AQUI >>
+![Página com resumo](img/resumo-tela.png)
+<img width="372" height="664" alt="image" src="https://github.com/user-attachments/assets/ca4e8b5f-d892-449c-9ff6-236d24c40033" />
 
-<<  COLOQUE A IMAGEM - PÁGINA COM O RESUMO - AQUI >>
